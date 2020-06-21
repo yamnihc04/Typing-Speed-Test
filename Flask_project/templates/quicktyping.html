@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block title %}
+    Quick Typing
+{% endblock %}
+{% block head %}
+<script src="static/quickjs.js"></script>
+<link rel="stylesheet" href="static/quick.css">
+{% endblock %}
+{% block body %}
+    <div id="container-game" class="container">
+        <div id="jumbotron-game" class="jumbotron">
+            <h1>&#x1F5F2;Quick Typing &#x1F5F2;</h1>
+            <h5>Type your fingers out.</h5>
+            <div id="scoretime">
+                <div id="fillscore">
+                    <h3 id="score">Score: </h3>
+                    <h3 id="calcscore">0</h3>
+                </div>
+                <div id="filltime">
+                    <h3 id="calctime">60 sec</h3>
+                    <h3 id="time">Time: </h3>
+                </div>
+            </div>
+            <div class="fillwords">
+                <h4 class="words">Press any key to begin!</h4>
+            </div>
+            <hr>
+            
+        </div>
+    </div>
+    <p align="center" class="buttonn">
+        <input type="button" class="btn btn-primary btn-warning" value="Retry" id="retry">
+    </p>
+{% endblock %}

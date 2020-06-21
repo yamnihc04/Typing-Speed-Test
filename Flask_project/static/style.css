@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html{
+    min-height: 100%;
+  }
+.navbar-brand {
+    font-size: 20px;
+    font-family: 'Montserrat';
+}
+body{
+    height: calc(100vh - 8em);
+    padding: 4em;
+    color:  #e4bc2f;
+    font-family: 'Montserrat';  
+    background-color: rgb(15, 15, 15);
+    font-size:28.8px;
+}
+
+
+
+.footer {
+    position: fixed;
+    transform: scale(1);
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    background-color: #111419;
+    color: white;
+    text-align: center;
+    font-size: small;
+ }
+
+input[type="radio"] {
+    transform: scale(1.1);
+    margin-left: 40px;
+}
+label {
+    transform: scale(1.1);
+    margin-left: 70px;
+}
+.containerdown{
+    align-items: center;
+}
+
+.form-check-input{
+    left: 32%;
+    transform: scale(1.5);
+}
+.form-check-label{
+    margin-left: 5%;
+    padding-bottom: 5px;
+    transform: scale(1.5);
+    font-size: medium;
+}
+#jumbotron-grid {
+    width:100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  
+}
+#container-jumbotron {
+    margin-top: 40px;
+}
+#container-grid {
+    margin-top: 90px;
+}
+#jumbotron1 {
+    text-align: justify;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    color:#e4bc2f;
+}
+#jumbotron1 > h3 {
+    color: rgb(0, 0, 0);
+}
+#jumbotron2 {
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    padding-right: 8px;
+    background: #ffffff;
+}
+
+.btn-retry {
+    width: 100%;
+}
+#typer {
+    color: rgb(0, 0, 0);
+    font-size:25px;
+    height: 50px;
+    font-family: 'Montserrat';
+}
+#timer {
+    border-radius: 40px 40px;
+    color: #000;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 29px;
+    display: inline-block;
+    width: 60px;
+    height: 42px;
+    border: 1px solid #e4bc2f;
+    background: rgb(65, 65, 65);
+}
+#wpm, #correct-words, #correct-characters, #wrong-words, #accuracy-speed {
+    text-align: center;
+}
+#wpm-box {
+    background-color: #ac8e0d;
+    border-radius: 15px 15px;
+}
+#correct-characters{
+    color: #00c606;
+}
+#correct-words{
+    color: #00c606;
+}
+#wrong-words{
+    color: #e50000;
+}
+#exampleFormControlSelect1{
+    margin-left:15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 90%;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    height: 45px;
+    font-weight: bold;
+    padding-top: 7px;
+    padding-left: 10%;
+    background-color: #ffffff;
+    transform: scale(1.2);
+    border: 3px solid rgba(0, 0, 0, 0.466);
+}
+select>option{
+    font-weight: normal;
+}
+#retrybutton{
+    float:left;
+    width: 25%;
+    margin-left: 32%;
+    margin-bottom: 5%;
+}
+#timer{
+    float:right;
+    margin-right: 37%;
+    margin-bottom: 7%;
+}

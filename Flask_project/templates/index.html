@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+{% block title %}
+    Homepage
+{% endblock %}
+{% block body %}
+<link rel="stylesheet" href="static/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <div> 
+    <h1 class=h1>Typing Speed Test</h1>
+    </div>
+    <style>
+    .h1{
+    border-right: solid 3px #e4bc2f;
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Montserrat' ;  
+    font-size: 280%;
+    color: #e4bc2f;
+    margin: 0 auto;
+  }
+  
+  /* Animation */
+.h1 {
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+               animated-cursor 600ms steps(25,end) infinite;
+}
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 750px;}
+  }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+    from{border-right-color: #e4bc2f;}
+    to{border-right-color: transparent;}
+  }
+
+    </style>
+    <hr style="visibility: hidden;">
+    <div id="container-grid" align="center" style="margin-top: 10px;" class="container">
+        <form method="POST" action="{{ url_for('testing') }}">
+            <h4>"Coz you should be good at 2 things:  Right swiping and fast typing  😉"</h4>
+            <div id="jumbotron-grid" class="jumbotron" style="margin-top: 50px; background-color: rgb(27, 27, 27);" >
+                <div align="center">
+                    <h2>Duration</h2>
+                    <hr>
+                        <div class="form-check-block" align="center">
+                            <input class="form-check-input" type="radio" name="timing" id="exampleRadios1" value="one">
+                            <label class="form-check-label" for="exampleRadios1">
+                            1 minute typing
+                            </label>
+                        </div>
+                        <div class="form-check-block">
+                            <input class="form-check-input" type="radio" name="timing" id="exampleRadios2" value="two">
+                            <label class="form-check-label" for="exampleRadios2">
+                            2 minutes typing
+                            </label>
+                        </div>
+                    <hr>
+                </div>
+        </div>
+            <button type="submit" align="center" class="btn btn-primary btn-outline-warning">Let's Go!</button>
+        </form>
+    </div>
+    <footer>
+    <div align="center">
+        <a class="fa fa-github-square" style="font-size:36px;color:darkgoldenrod" href="https://github.com/yamnihc04" ></a>
+        <a class="fa fa-facebook-square" style="font-size:36px;color:darkgoldenrod" href="http://www.facebook.com" ></a>
+        <a class="fa fa-linkedin-square" style="font-size:36px;color:darkgoldenrod" href="https://in.linkedin.com/in/chinmay-mahagaonkar-402823190" ></a>
+        <a class="fa fa-telegram" style="font-size:36px;color:darkgoldenrod" href="https://t.me/ChinmayMahagaonkar" ></a>
+       
+    </div>
+    <div align="center">
+         <span class="text-muted" style="font-size:50%">Made with   <i style="font-size:150%;color:red;">&hearts; </i> in India.</span> 
+    </div>
+    </footer>
+</body>
+
+{% endblock %}
