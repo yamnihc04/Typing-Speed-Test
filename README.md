@@ -13,3 +13,6 @@ screenshots
 
 
 ![2020-06-21 (5)](https://user-images.githubusercontent.com/62831524/85219825-78cec480-b3c4-11ea-8104-397915d67d74.png)
+
+
+make sure to install all the required tools from requirements.txt
