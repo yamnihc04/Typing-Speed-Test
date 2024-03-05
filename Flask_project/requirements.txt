@@ -40,7 +40,7 @@ typed-ast==1.1.0
 typing==3.6.4
 urllib3==1.23
 URLObject==2.4.3
-Werkzeug==0.14.1
+Werkzeug==2.3.8
 wikipedia==1.4.0
 wincertstore==0.2
 wrapt==1.10.11
